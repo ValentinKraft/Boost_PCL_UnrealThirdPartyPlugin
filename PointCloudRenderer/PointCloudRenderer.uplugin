@@ -1,0 +1,25 @@
+{
+	"FileVersion" : 3,
+	"Version" : 1,
+	"VersionName" : "1.0",
+	"FriendlyName" : "Point Cloud Renderer",
+	"Description" : "SCIENCE, BITCH.",
+	"Category" : "Rendering",
+	"CreatedBy" : "Valentin Kraft",
+	"CreatedByURL" : "http://www.valentinkraft.de",
+	"DocsURL" : "",
+	"MarketplaceURL" : "",
+	"SupportURL" : "",
+	"EnabledByDefault" : false,
+	"CanContainContent" : false,
+	"IsBetaVersion" : true,
+	"Installed" : false,
+	"Modules" :
+	[
+    {
+      "Name": "PointCloudRenderer",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    }
+	]
+}
