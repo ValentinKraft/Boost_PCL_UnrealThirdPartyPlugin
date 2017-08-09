@@ -1,9 +1,12 @@
 # Boost / PCL Unreal Third-Party Plugin
 A template for a Unreal Engine plugin including a C++ Third Party library (on the example of the Point Cloud Library and Boost).
-PCL version: 1.8.1
-Boost version: 1.64
 
-For the corresponding tutorial please visit: http://www.valentinkraft.de/including-the-point-cloud-library-into-unreal-tutorial/
+* PCL version: 1.8.1
+* Boost version: 1.64
+
+For the corresponding tutorial please visit:
+
+http://www.valentinkraft.de/including-the-point-cloud-library-into-unreal-tutorial/
 
 # Installation / Usage
 Please put this in your Unreal's plugin folder and rebuild the Visual Studio project files.
