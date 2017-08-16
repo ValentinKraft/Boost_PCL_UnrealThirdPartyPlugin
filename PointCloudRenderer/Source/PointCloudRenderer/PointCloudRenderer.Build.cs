@@ -24,8 +24,8 @@ namespace UnrealBuildTool.Rules
 
         public PointCloudRenderer(ReadOnlyTargetRules Target) : base(Target)
         {
-            PrivateIncludePaths.Add("Source/PointCloudRenderer/Private");
-            PublicIncludePaths.Add("Source/PointCloudRenderer/Public");
+            PrivateIncludePaths.Add("PointCloudRenderer/Private");
+            PublicIncludePaths.Add("PointCloudRenderer/Public");
 
             PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "PCL" });
             PrivateDependencyModuleNames.AddRange(new string[] { "Core" });
@@ -33,6 +33,7 @@ namespace UnrealBuildTool.Rules
             // Since the PCL module needs this, we also have to use these flags here
             bUseRTTI = true;
             bEnableExceptions = true;
+            //Definitions.Add("BOOST_NO_RTTI");
             //bEnableUndefinedIdentifierWarnings = false;
         }
     }

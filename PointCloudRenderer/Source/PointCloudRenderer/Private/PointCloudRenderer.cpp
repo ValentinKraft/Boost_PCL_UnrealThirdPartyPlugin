@@ -1,4 +1,4 @@
-// Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
+// (c) 2017 by Valentin Kraft, http://www.valentinkraft.de
 
 #include "CoreMinimal.h"
 #include "Modules/ModuleManager.h"
@@ -26,8 +26,6 @@ public:
 
 private:
 	pcl::PointCloud<pcl::PointXYZ> cloud;
-	//pcl::PointCloud<pcl::PointXYZ>* cloud;
-	//boost::shared_ptr<pcl::PointCloud<pcl::PointXYZ>> cloud;
 };
 
 IMPLEMENT_MODULE(FPointCloudRenderer, PointCloudRenderer)
@@ -35,9 +33,9 @@ IMPLEMENT_MODULE(FPointCloudRenderer, PointCloudRenderer)
 
 void FPointCloudRenderer::StartupModule()
 {
-	UE_LOG(PointCloudRenderer, Log, TEXT("//////////////////////////////////// \n"));
-	UE_LOG(PointCloudRenderer, Log, TEXT("// Starting Point Cloud Renderer... \n"));
-	UE_LOG(PointCloudRenderer, Log, TEXT("//////////////////////////////////// \n"));
+	UE_LOG(PointCloudRenderer, Log, TEXT("################################### \n"));
+	UE_LOG(PointCloudRenderer, Log, TEXT("## Starting Point Cloud Renderer... \n"));
+	UE_LOG(PointCloudRenderer, Log, TEXT("################################### \n"));
 
 	FPointCloudRenderer::LoadPCDFile();
 }
@@ -47,7 +45,6 @@ int FPointCloudRenderer::LoadPCDFile() {
 
 	if (pcl::io::loadPCDFile<pcl::PointXYZ>("C:\\Users\\Valle\\Dropbox\\Uni\\Masterarbeit\\Daten\\bunny.pcd", cloud) == -1)
 	{
-		//PCL_ERROR("Couldn't read file test_pcd.pcd \n");
 		UE_LOG(PointCloudRenderer, Warning, TEXT("Couldn't read file test_pcd.pcd \n"));
 
 		return (-1);
@@ -64,7 +61,4 @@ void FPointCloudRenderer::ShutdownModule()
 {
 	// This function may be called during shutdown to clean up your module.  For modules that support dynamic reloading,
 	// we call this function before unloading the module.
-
-	//PointerToBobsMagic->Dispose();
-	//PointerToBobsMagic = NULL;
 }

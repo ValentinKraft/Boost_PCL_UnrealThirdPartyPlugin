@@ -8,10 +8,9 @@
 
 
 /**
- * The public interface to the Point Cloud Renderer module.
- * @Author Valentin Kraft
+ * The public interface to this module
  */
-class IPointCloudRenderer : public IModuleInterface
+class IPointCloudRendererEditorPlugin : public IModuleInterface
 {
 
 public:
@@ -22,9 +21,9 @@ public:
 	 *
 	 * @return Returns singleton instance, loading the module on demand if needed
 	 */
-	static inline IPointCloudRenderer& Get()
+	static inline IPointCloudRendererEditorPlugin& Get()
 	{
-		return FModuleManager::LoadModuleChecked< IPointCloudRenderer >( "PointCloudRenderer" );
+		return FModuleManager::LoadModuleChecked< IPointCloudRendererEditorPlugin >( "PointCloudRendererEditor" );
 	}
 
 	/**
@@ -34,9 +33,7 @@ public:
 	 */
 	static inline bool IsAvailable()
 	{
-		return FModuleManager::Get().IsModuleLoaded( "PointCloudRenderer" );
+		return FModuleManager::Get().IsModuleLoaded( "PointCloudRendererEditor" );
 	}
-
-	virtual int LoadPCDFile() = 0;
 };
 
