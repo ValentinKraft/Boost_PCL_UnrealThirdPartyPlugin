@@ -31,3 +31,5 @@ THIRD_PARTY_INCLUDES_END
 ```
 
 Please note: This template is for static libraries (.lib) only (no dynamic DLLs).
+
+If you have problems using this template, feel free to contact me on my portfolio: http://www.valentinkraft.de/
