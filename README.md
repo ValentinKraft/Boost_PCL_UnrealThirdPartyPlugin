@@ -21,7 +21,7 @@ PublicDependencyModuleNames.Add("PCL");
 bUseRTTI = true;
 bEnableExceptions = true;
 ```
-now you can include your external libraries in your classes like this:
+Now you can include your external libraries in your classes like this:
 ```c++
 THIRD_PARTY_INCLUDES_START
 #include <pcl/io/pcd_io.h>
