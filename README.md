@@ -19,11 +19,11 @@ If you only want to use PCL/Boost functions in your project, you have to add the
 ```c#
 PublicDependencyModuleNames.Add("PCL");
 ```
-Depending on your system you **might** also have to enable RTTI and Exceptions as well:
-```c#
-bUseRTTI = true;
-bEnableExceptions = true;
-```
+  Depending on your system you **might** also have to enable RTTI and Exceptions as well (try without first):
+  ```c#
+  bUseRTTI = true;
+  bEnableExceptions = true;
+  ```
 Now you can include your external libraries in your classes like this:
 ```c++
 THIRD_PARTY_INCLUDES_START
