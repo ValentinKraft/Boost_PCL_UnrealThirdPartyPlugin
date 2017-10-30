@@ -10,7 +10,7 @@ For the corresponding tutorial please visit:
 http://www.valentinkraft.de/including-the-point-cloud-library-into-unreal-tutorial/
 
 # Installation
-Please put this in your Engine/project plugin folder and activate the Plugin in Unreal (If you want to use it as an Engine plugin, you might have to include the plugin into a project once, so Unreal can compile your plugin before you can put it in your engine's plugin folder). When the engine asks you for recompiling, do it.
+Please put this in your Engine/project plugin folder and activate the Plugin in Unreal (If you want to use it as an Engine plugin, you _have to include the plugin into a project once_, so Unreal can compile your plugin before you can put it in your engine's plugin folder). When the engine asks you for recompiling, do it.
 
 # Usage
 If you want to use this as a starting point for your own plugin / other third party libraries please insert your Third-Party libraries in /Source/ThirdParty/ and change the PCL.Build.cs accordingly (details see tutorial, link above).
