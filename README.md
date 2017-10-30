@@ -31,8 +31,8 @@ THIRD_PARTY_INCLUDES_START
 THIRD_PARTY_INCLUDES_END
 ```
 
-Please note:
-* This Plugin doesn't provide a point cloud renderer. However, I'm developing a point cloud rendering at the moment, which you'll find on my portfolio.
+**Please note:**
+* This Plugin doesn't provide a point cloud renderer. It merely includes the point cloud library (PCL). However, I'm developing a point cloud renderer plugin for Unreal at the moment, which you'll soon find on my portfolio.
 * This template is for static libraries (.lib) only (no dynamic DLLs).
 * The included PCL/Boost libraries are for Windows 64bit.
 
