@@ -15,10 +15,12 @@ Please put this in your Engine/project plugin folder and activate the Plugin in 
 # Usage
 If you want to use this as a starting point for your own plugin / other third party libraries please insert your Third-Party libraries in /Source/ThirdParty/ and change the PCL.Build.cs accordingly (details see tutorial, link above).
 
-If you only want to use PCL/Boost functions in your project, you have to add the PCL/Boost module to your project's Build.cs file and enable RTTI and Exceptions as well:
+If you only want to use PCL/Boost functions in your project, you have to add the PCL/Boost module to your project's Build.cs file:
 ```c#
 PublicDependencyModuleNames.Add("PCL");
-
+```
+Depending on your system you **might** also have to enable RTTI and Exceptions as well:
+```c#
 bUseRTTI = true;
 bEnableExceptions = true;
 ```
