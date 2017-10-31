@@ -32,6 +32,10 @@ THIRD_PARTY_INCLUDES_START
 #include <boost/shared_ptr.hpp>
 THIRD_PARTY_INCLUDES_END
 ```
+And call third-party functions like this, for example (see PointCloudRenderer.cpp):
+```c++
+pcl::io::loadPCDFile<pcl::PointXYZ>("C:\\bunny.pcd", cloud);
+```
 
 **Please note:**
 * This Plugin doesn't provide a point cloud renderer. It merely includes the point cloud library (PCL). However, I'm developing a point cloud renderer plugin for Unreal at the moment, which you'll soon find on my portfolio.
