@@ -20,6 +20,11 @@
       "Name": "PointCloudRenderer",
       "Type": "Runtime",
       "LoadingPhase": "Default"
+    },
+    {
+      "Name": "PointCloudRendererEditor",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
     }
 	]
 }
