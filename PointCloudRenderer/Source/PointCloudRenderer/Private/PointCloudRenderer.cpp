@@ -43,9 +43,9 @@ void FPointCloudRenderer::StartupModule()
 
 int FPointCloudRenderer::LoadPCDFile() {
 
-	if (pcl::io::loadPCDFile<pcl::PointXYZ>("C:\\Users\\Valle\\Dropbox\\Uni\\Masterarbeit\\Daten\\bunny.pcd", cloud) == -1)
+	if (pcl::io::loadPCDFile<pcl::PointXYZ>("C:\\bunny.pcd", cloud) == -1)		//Dummy function call - please change
 	{
-		UE_LOG(PointCloudRenderer, Warning, TEXT("Couldn't read file test_pcd.pcd \n"));
+		UE_LOG(PointCloudRenderer, Error, TEXT("Couldn't read pcd file. \n"));
 
 		return (-1);
 	}
