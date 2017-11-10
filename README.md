@@ -32,7 +32,7 @@ THIRD_PARTY_INCLUDES_START
 #include <boost/shared_ptr.hpp>
 THIRD_PARTY_INCLUDES_END
 ```
-And call third-party functions like this, for example (see PointCloudRenderer.cpp):
+And call your third-party functions like this, for example (please see/change PointCloudRenderer.cpp):
 ```c++
 pcl::io::loadPCDFile<pcl::PointXYZ>("C:\\bunny.pcd", cloud);
 ```
