@@ -45,7 +45,7 @@ int FPointCloudRenderer::LoadPCDFile() {
 
 	if (pcl::io::loadPCDFile<pcl::PointXYZ>("C:\\bunny.pcd", cloud) == -1)		//Dummy function call - please change
 	{
-		UE_LOG(PointCloudRenderer, Error, TEXT("Couldn't read pcd file. \n"));
+		UE_LOG(PointCloudRenderer, Error, TEXT("Couldn't read pcd file. Please change dummy function in PointCloudRenderer.cpp!\n"));
 
 		return (-1);
 	}

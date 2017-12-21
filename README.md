@@ -38,8 +38,8 @@ pcl::io::loadPCDFile<pcl::PointXYZ>("C:\\bunny.pcd", cloud);
 ```
 
 **Please note:**
-* This Plugin doesn't provide a point cloud renderer. It merely includes the point cloud library (PCL). However, I'm developing a point cloud renderer plugin for Unreal at the moment, which you'll soon find on my portfolio.
+* This Plugin doesn't provide a point cloud renderer. It merely includes the point cloud library (http://pointclouds.org/) and boost. However, I'm developing a point cloud renderer plugin for Unreal at the moment, which you'll soon find on my portfolio/on the marketplace.
 * This template is for static libraries (.lib) only (no dynamic DLLs).
-* The included PCL/Boost libraries are for Windows 64bit.
+* The included PCL/Boost libraries (and hence the whole plugin) is for Windows 64bit (Release-Build) only.
 
 If you have problems using this template, feel free to contact me on my portfolio: http://www.valentinkraft.de/

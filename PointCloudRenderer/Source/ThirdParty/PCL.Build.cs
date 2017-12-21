@@ -28,7 +28,7 @@ namespace UnrealBuildTool.Rules
         public bool LoadPCL(ReadOnlyTargetRules Target)
         {
             bool isLibrarySupported = false;
-            bool bDebug = (Target.Configuration == UnrealTargetConfiguration.Debug && BuildConfiguration.bDebugBuildsActuallyUseDebugCRT);
+            //bool bDebug = (Target.Configuration == UnrealTargetConfiguration.Debug && BuildConfiguration.bDebugBuildsActuallyUseDebugCRT);
 
             if (Target.Platform == UnrealTargetPlatform.Win64)
             {
